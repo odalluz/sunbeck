@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNBECK - Página em Construção</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .construction-text {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .loading-bar-container {
+            width: 100%;
+            max-width: 600px;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .loading-bar {
+            width: 0;
+            height: 100%;
+            background-color: #25D366;
+            border-radius: 5px;
+            animation: loading 2s ease infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        .iframe-container {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #whatsapp-button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 15px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="construction-text">
+        <p>Desculpe-nos, esta página está em construção.</p>
+        <p>Estamos trabalhando para trazer conteúdo incrível em breve!</p>
+    </div>
+
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+
+    <div class="iframe-container">
+        <iframe src="https://azume.com.br/simulador/6537c0916b7cb100146af991" width="100%" height="100%"></iframe>
+    </div>
+
+    <a href="https://wa.me/5541998130928" target="_blank" id="whatsapp-button">Entre em Contato pelo WhatsApp</a>
+</body>
+</html>
